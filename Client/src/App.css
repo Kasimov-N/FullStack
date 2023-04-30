@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+.left{
+    width: 50%;
+    min-height: 100%;
+    overflow-Y: scroll;
+    padding: 20px 10px;
+    background-color: #818181;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+::-webkit-scrollbar{
+    width: 20px;
+}
+.Item{
+    position: relative;
+    width: 48%;
+    height: 30%;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+h1{
+    font-size: 20px;
+    color: rgba(255, 0, 0, 0.799);
+}
+h2{
+    color: rgba(60, 0, 255, 0.799);
+    font-size: 15px;
+}
+.h2{
+    margin-bottom: 30px;
+    color: rgb(169, 200, 169);
+}
+.edit{
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color: rgb(255, 208, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.delete{
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.799);
+    bottom: 0;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    padding: 40px 40px;
+    width: 50%;
+    min-height: 100vh;
+    background-color: #909090;
+}
+input, button{
+    width: 100%;
+    padding: 10px;
+    font-size: 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    margin-bottom: 20px;
+}
+button{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+input::placeholder{
+    color: #ffffffc6;
+}
